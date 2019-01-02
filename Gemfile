@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+#ruby=2.5.1
+#ruby-gemset=rails515
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -34,6 +36,9 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'will_paginate', '3.1.5'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'rails-controller-testing'
+
+gem 'webpacker', '~> 3.5'
+gem 'react-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
